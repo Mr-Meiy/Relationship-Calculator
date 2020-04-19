@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FLAMES by Meiy</title>
+  <link rel="icon" href="image/b.jpg" type="image/icon type">
+  <script type='text/javascript' src='flames.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style type="text/css">
+    body 
+    {
+      background: url("image/b.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+    h2
+    {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .container
+    {
+      width: 500px;
+      background-color: rgba(245, 245, 245, 0.8);
+    }
+    /*.btn
+    {
+      animation: example 6s linear 0s infinite alternate;
+      animation-name: animation1;
+    }
+    @keyframes animation1
+    {
+      0%   {color: blue;}
+      20%  {color: #FF0080;}
+      40%  {color: #DBA901;}
+      60%  {color: green;}
+      80%  {color: red;}
+      100% {color: violet;}
+    }*/
+  </style>
+</head>
+<body>
+		<div align='center' class='container rounded p-5' style="margin-top:100px;">
+    	   <h2 class="text-danger">Relationship Calculator</h2>
+   			 <form name=first class="form-group">
+            <b>Your Name</b>
+            <input name=name onkeyup=checnum(this) type=text class="form-control" id='yname'>          
+            <b>Lover's Name </b>                               
+            <input name=name1 onkeyup=checnum(this) type=text class="form-control" id='pname'>
+            <br>
+				    <div name=n1 id=nam1></div>
+            <div style='font-weight:bold;' id='msg'></div>
+            <br>
+            <input name='calculate' type='button' value=FLAMES onclick='calc()' class='btn'>
+            <input type='reset' value="Reset" class='btn'>
+
+            <h3 id='tablid'></h3>
+        </form>
+    </div>
+</body>
+</html>
